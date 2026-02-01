@@ -1,2 +1,3 @@
 # CVRPwithClusterRoute
-MATLAB Optimization
+
+This project provides a MATLAB solver for the Capacitated Vehicle Routing Problem (CVRP) using a Cluster-First Route approach that starts with K-medoids clustering to group customers by spatial proximity and respect vehicle capacity. Within each cluster, a Genetic Algorithm generates initial routes, which are then refined using NSGA-II and local search operators (e.g., swap, scramble, insert) to improve solution quality. The method supports multi-objective optimization—minimizing total distance, reducing the number of routes/vehicles, and optionally balancing vehicle loads—while tracking convergence and visualizing clusters, routes, and the Pareto front. It uses Augerat benchmark instances (e.g., A-n32-k5) converted to Excel for MATLAB processing and outputs per-vehicle routes, distances, and plots.
